@@ -1,0 +1,16 @@
+
+<section>
+      
+    <% if @categories.exists? %>
+      <h1>Categories</h1>
+      <div id="categories">
+        <% @categories.each do |category| %>
+          <%= render category %>
+          <%= button_to "Delete", category_path(category), method: :delete %>
+        <% end %> 
+      </div>
+    <% else %> 
+       <h1>Tranzkt<h1> 
+    <% end %>   
+      <%= link_to "New category", new_category_path %>
+</section>
