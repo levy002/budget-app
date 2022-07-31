@@ -1,6 +1,5 @@
 
-<section>
-      
+<section>  
     <% if @categories.exists? %>
       <h1>Categories</h1>
       <div id="categories">
@@ -11,6 +10,6 @@
       </div>
     <% else %> 
        <h1>Tranzkt<h1> 
-    <% end %>   
+    <% end %> 
       <%= link_to "New category", new_category_path %>
 </section>
