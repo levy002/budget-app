@@ -4,6 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :categories, dependent: :destroy
+  has_many :categories
+  has_many :transactions
   validates :name, presence: true, length: { in: 1..50 }      
 end
