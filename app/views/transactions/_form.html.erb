@@ -1,0 +1,22 @@
+<%= form_with(model: transaction, url: category_transactions_path(@category)) do |form| %>
+  <div>
+    <%= form.label :category_id, style: "display: block" %>
+    <%= form.collection_select :category_id, current_user.categories, :id, :name, prompt: true %>
+  </div>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :amount, style: "display: block" %>
+    <%= form.number_field :amount %>
+  </div>
+
+  <div>
+    <%= form.submit :Save %>
+  </div>
+<% end %>
+
+<%= link_to "Back", categories_path %>
