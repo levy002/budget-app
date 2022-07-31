@@ -1,10 +1,13 @@
 class CategoriesController < ApplicationController
 
   def index
-    @categories = Category.all
+    @user = current_user
+    @categories = @user.categories
   end
 
   def show
+    @category = Category.find(params[:id])
+    @transactions = @category.transactions.order(created_at: :desc)
   end
 
   def new
@@ -23,9 +26,8 @@ class CategoriesController < ApplicationController
   end
 
   def destroy
-    category = Category.find(params[:id])
-
-    if category.destroy!
+    @category = Category.find(params[:id])
+    if @category.destroy!
       flash[:notice] = 'Category deleted!'
       redirect_to categories_path
     else
@@ -34,9 +36,6 @@ class CategoriesController < ApplicationController
   end  
 
   private
-    def set_category
-      @category = Category.find(params[:id])
-    end
 
     def category_params
       category = params.require(:category).permit(:name, :icon, :user_id)
