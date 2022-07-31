@@ -1,0 +1,23 @@
+<section>
+<div>
+  <h2>
+    <%= @category.name %>
+  </h2>
+  <p> Total transactions amount: $
+  <%=@category.transactions.sum(:amount) %>
+  </p>
+  <%= button_to "Delete", @category, method: :delete %>
+</div>
+<div>
+  <h3>Transactions</h3>
+  <% @transactions.each do |transaction| %>
+    <%= render transaction %>
+    <%= button_to "Delete", category_transaction_path(transaction), method: :delete %>
+  <% end %>
+</div>
+  <div>
+    <%= link_to "Back", categories_path %>
+    
+</div>
+<%= link_to "New transaction", new_category_transaction_path(@category) %>
+</section>
