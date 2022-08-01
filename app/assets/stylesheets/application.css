@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+.new_user{
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
