@@ -1,8 +1,8 @@
-class CategoriesController < ApplicationController
+# frozen_string_literal: true
 
+class CategoriesController < ApplicationController
   def index
-    @user = current_user
-    @categories = @user.categories
+    @categories = current_user.categories
   end
 
   def show
@@ -14,15 +14,14 @@ class CategoriesController < ApplicationController
     @category = Category.new
   end
 
-
   def create
-    @category = Category.new(category_params)
+    category = Category.new(category_params)
 
-      if @category.save
-        redirect_to categories_url, notice: "Category was successfully created."
-      else
-        redirect_to categories_path, alert: "Failed to create new category"
-      end
+    if category.save
+      redirect_to categories_url, notice: 'Category was successfully created.'
+    else
+      redirect_to categories_path, alert: 'Failed to create new category'
+    end
   end
 
   def destroy
@@ -32,14 +31,14 @@ class CategoriesController < ApplicationController
       redirect_to categories_path
     else
       flash[:alert] = 'Failed to delete category!'
-    end 
-  end  
+    end
+  end
 
   private
 
-    def category_params
-      category = params.require(:category).permit(:name, :icon, :user_id)
-      category[:user_id] = current_user.id
-      category
-    end
+  def category_params
+    category = params.require(:category).permit(:name, :icon, :user_id)
+    category[:user_id] = current_user.id
+    category
+  end
 end
