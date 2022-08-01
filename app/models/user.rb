@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -6,5 +8,5 @@ class User < ApplicationRecord
 
   has_many :categories
   has_many :transactions
-  validates :name, presence: true, length: { in: 1..50 }      
+  validates :name, presence: true, length: { in: 1..50 }
 end
