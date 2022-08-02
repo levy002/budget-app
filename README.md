@@ -1,13 +1,13 @@
 # TRAnzKT APP
 TRAnzKT App is a mobile web application that allows the user to manage his/her budget: they have a list of transactions associated with a category, so that the user can see how much money they spend and on a particular category.
 
-![mobile (1)](https://user-images.githubusercontent.com/87197412/182374916-ed3aa8f3-837d-488d-80d2-c11159ef862b.png)
+<!-- ![mobile (1)](https://user-images.githubusercontent.com/87197412/182374916-ed3aa8f3-837d-488d-80d2-c11159ef862b.png)
  ![mobile (2)](https://user-images.githubusercontent.com/87197412/182375362-330edb6e-2888-44f8-abf6-75130a15005a.png)
-
+ -->
 
 
 ## Live Demo
- [Live link](https://mysterious-everglades-26299.herokuapp.com/)
+ Visit live demo [here](https://dry-bastion-60998.herokuapp.com/)
  
  ## Built With
  - Ruby on Rails
