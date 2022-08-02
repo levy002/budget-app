@@ -1,8 +1,8 @@
-<section class='flex flex-col justify-center gap-4 items-center h-full bg-blue-100'>
-<h2 class='text-2xl font-bold text-blue-600 self-center mb-2'>Log in</h2>
+<section class='flex flex-col justify-start gap-1 items-center h-full bg-zinc-100'>
+<h2 class='text-white text-xl font-bold p-4 bg-blue-800 w-full text-center'>Log In</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field flex flex-col">
+  <div class="field flex flex-col w-full">
     <%= f.label :email, class: 'text-base text-blue-400 font-bold' %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'p-1 border-2 border-blue-300 rounded-md' %>
   </div>
@@ -11,13 +11,6 @@
     <%= f.label :password, class: 'text-base text-blue-400 font-bold' %>
     <%= f.password_field :password, autocomplete: "current-password", class: 'p-1 border-2 border-blue-300 rounded-md' %>
   </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me, class: 'text-blue-400 font-bold italic' %>
-    </div>
-  <% end %>
 
   <div class="actions self-center">
     <%= f.submit "Log in", class: 'text-slate-50 font-bold border bg-blue-400 rounded-md py-1 px-5' %>
