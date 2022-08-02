@@ -1,7 +1,9 @@
 # TRAnzKT APP
 TRAnzKT App is a mobile web application that allows the user to manage his/her budget: they have a list of transactions associated with a category, so that the user can see how much money they spend and on a particular category.
 
-![127 0 0 1_3000_(iPhone 6_7_8 Plus)](https://user-images.githubusercontent.com/87197412/182374010-d2f9a83c-86e9-4905-b2c5-c6b1b0a6b2df.png)
+![mobile (1)](https://user-images.githubusercontent.com/87197412/182374916-ed3aa8f3-837d-488d-80d2-c11159ef862b.png)
+ ![mobile (2)](https://user-images.githubusercontent.com/87197412/182375362-330edb6e-2888-44f8-abf6-75130a15005a.png)
+
 
 
 ## Live Demo
