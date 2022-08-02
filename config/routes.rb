@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   resources :categories, only: %i[index show new create destroy] do
     resources :transactions, only: %i[new create destroy]
   end
-  
-    resources :splash, only: %i[index]
-    root 'splash#index'
 
+  resources :splash, only: %i[index]
+  root 'splash#index'
 end
