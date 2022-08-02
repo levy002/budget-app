@@ -1,24 +1,56 @@
-# README
+# TRAnzKT APP
+TRAnzKT App is a mobile web application that allows the user to manage his/her budget: they have a list of transactions associated with a category, so that the user can see how much money they spend and on a particular category.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![127 0 0 1_3000_(iPhone 6_7_8 Plus)](https://user-images.githubusercontent.com/87197412/182374010-d2f9a83c-86e9-4905-b2c5-c6b1b0a6b2df.png)
 
-Things you may want to cover:
 
-* Ruby version
+## Live Demo
+ [Live link](https://mysterious-everglades-26299.herokuapp.com/)
+ 
+ ## Built With
+ - Ruby on Rails
+ - Tailwind.CSS
+ 
+## prerequisites
+``` 
+  Ruby
+  rails version 7.x gem package 
+```
+### Development (Running locally)
 
-* System dependencies
+- git clone the project
 
-* Configuration
+```bash 
+git@github.com:levy002/budget-app.git
+```
 
-* Database creation
+- Install Dependencies
 
-* Database initialization
+```bash
+bundle install
+```
 
-* How to run the test suite
+👤 **levy_ukwishaka**
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@levy002](https://github.com/levy002)
+- Twitter: [ @levy_ukwishaka](https://twitter.com/levy_ukwishaka)
+- LinkedIn: [levy-ukwishaka](https://www.linkedin.com/in/levy-ukwishaka)
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/levy002/budget-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- Thanks [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for the original design idea.
+- Thanks to my morning session partners, coding partners and teammates.
+
+## 📝 License
+[MIT licensed](https://github.com/levy002/recipe-app/blob/Dev/LICENSE).
+
+
