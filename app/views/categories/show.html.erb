@@ -13,12 +13,10 @@
     </div>
     </div>
     <% if @transactions.exists? %>
-      <div class='flex flex-col gap-4'>
+      <div class='flex flex-col gap-2'>
         <% @transactions.each do |transaction| %>
-        <div class='flex justify-between items-center bg-slate-50 p-2 mx-2 rounded-md'> 
+        <div class='bg-slate-50 p-2 mx-2 rounded-md'> 
             <%= render transaction %>
-  </div>
-
           </div>
         <% end %>
       </div>
