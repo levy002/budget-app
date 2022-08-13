@@ -1,0 +1,20 @@
+<%= form_with(:class => "flex flex-col gap-4",model: transaction, url: category_transactions_path(@category)) do |form| %>
+  <div class='flex flex-col'>
+    <%= form.label :category_id, class: 'text-base text-blue-400 font-bold' %>
+    <%= form.collection_select :category_id, current_user.categories, :id, :name, prompt: true, class: 'bg-slate-50' %>
+  </div>
+
+  <div class='flex flex-col'>
+    <%= form.label :name, class: 'text-base text-blue-400 font-bold' %>
+    <%= form.text_field :name, class: 'p-1 border-2 border-blue-300 rounded-md' %>
+  </div class='flex flex-col'>
+
+  <div class='flex flex-col'>
+    <%= form.label :amount, class: 'text-base text-blue-400 font-bold' %>
+    <%= form.number_field :amount, class: 'p-1 border-2 border-blue-300 rounded-md' %>
+  </div>
+
+  <div class='self-center'>
+    <%= form.submit :Save, class: 'text-slate-50 font-bold border bg-blue-400 rounded-md py-1 px-5' %>
+  </div>
+<% end %>
